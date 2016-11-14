@@ -27,7 +27,6 @@
         </activity>
         <activity android:name=".MenuActivity" />
         <activity android:name=".MapsActivity" />
-        <activity android:name=".TrailsActivity" />
         <activity android:name=".WeatherActivity" />
         <activity android:name=".CompassActivity" />
         <!--
@@ -59,6 +58,15 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.miguelsportal.googleloginm.MenuActivity" />
+        </activity>
+        <activity
+            android:name=".JourneyActivity"
+            android:label="@string/title_activity_journey"
+            android:parentActivityName=".TrailActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.miguelsportal.googleloginm.TrailActivity" />
         </activity>
     </application>
 
